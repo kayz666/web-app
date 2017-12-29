@@ -5,9 +5,16 @@ $(document).ready(function(){
     //     }
     // });
 
-    $("#signinWithEmailForm").validate();
+    $("#signinWithEmailForm").validate({
+        submitHandler:function () {
+            form.submit();
+        }
+    });
 
     $("#registerWithEmailForm").validate({
+        submitHandler:function () {
+            form.submit();
+        },
         rules:{
             email:{
                 required:true,
