@@ -1,0 +1,53 @@
+
+<!-- 侧边栏 sidebar -->
+﻿	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+    <form role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </form>
+    <ul class="nav menu">
+        <!-- 导航栏1 -->
+        <li id="ml1010" class="active ml1" >
+            <a href="login" target="right" onclick="showframe('010')">
+                <span class="glyphicon glyphicon-dashboard"></span> 概览</a>
+        </li>
+        <!-- 导航栏2 -->
+        <li id="ml1020" class="ml1" >
+            <a href="login" target="right" onclick="showframe('020')">
+                <span class="glyphicon glyphicon-th"></span> 模块</a>
+        </li>
+        <!-- 导航栏3 -->
+        <li id="ml1030" class="ml1">
+            <a href="" target="right" onclick="showframe('030')">
+                <span class="glyphicon glyphicon-stats"></span> 传感器</a>
+        </li>
+        <!-- 导航栏4 -->
+        <li id="" class="parent ml1">
+            <a data-toggle="collapse" href="#sub-item-1" >
+                <span class="glyphicon glyphicon-list"></span> 用户 <span class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+            </a>
+            <ul class="children collapse" id="sub-item-1">
+                <li id="ml1040" class="ml1">
+                    <a class="" href="/" target="right" onclick="showframe('040')">
+                        <span class="glyphicon glyphicon-share-alt"></span> Sub Item 1
+                    </a>
+                </li>
+                <li id="ml1041" class="ml1">
+                    <a class="" href="/" target="right" onclick="showframe('041')">
+                        <span class="glyphicon glyphicon-share-alt"></span> Sub Item 2
+                    </a>
+                </li>
+                <li id="ml1042" class="ml1">
+                    <a class="" href="/" target="right" onclick="showframe('042')">
+                        <span class="glyphicon glyphicon-share-alt"></span> Sub Item 3
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li role="presentation" class="divider"></li>
+
+    </ul>
+    <div class="attribution">www.mylonglee.com</div>
+</div><!--/.sidebar-->
+

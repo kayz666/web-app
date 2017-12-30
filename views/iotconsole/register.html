@@ -1,0 +1,98 @@
+<!-- 注册框 -->
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-body tabs">
+                <ul class="nav ">
+                    <li class="active col-md-6 " align="center"><a href="#tab3" data-toggle="tab">通过电子邮箱注册</a></li>
+                    <li class="col-md-6" align="center"><a href="#tab4" data-toggle="tab">通过手机注册</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- 邮箱注册表单-->
+                    <div class="tab-pane fade in active" id="tab3">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
+                                <div class="login-panel panel panel-default">
+                                    <div class="panel-body">
+                                        <form class="form-email" id="registerWithEmailForm" method="post" action="register" role="form">
+                                            <fieldset>
+                                                <div class="form-group">
+
+                                                    <input class="form-control reg-email " id="email" placeholder="e-mail" name="email" type="email" autofocus="">
+                                                    <p class="reg-email-p1" ></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" id="password" placeholder="Password" name="password" type="password" value="">
+                                                </div>
+                                                <div class="form-group ">
+                                                    <input class="form-control" id="confirm_password" placeholder="Password" name="confirm_password" type="password" value="">
+                                                </div>
+                                                <div class="form-group ">
+                                                    <div class="verify">
+                                                        <span>验证:</span>
+                                                        <div id="verify_box">
+                                                            <div id="verify_xbox">
+                                                                <div id="btn">
+                                                                    <img src="/static/img/lllllll.png"/>
+                                                                </div>
+                                                            </div>
+                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;按住滑块，拖动到最右边
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group">
+
+                                                    <div class="col-xs-6  col-sm-6  col-md-6 ">
+                                                        <button class="btn btn-primary reg-em-button" disabled="true" id="reg-em-btn">
+                                                            注册
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-->
+                        </div><!-- /.row -->
+                    </div>
+                    <!-- 手机注册表单-->
+                    <div class="tab-pane fade" id="tab4">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                                <div class="login-panel panel panel-default">
+                                    <div class="panel-body">
+                                        <form role="form">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Telphone" name="Telphone" type="Telphone" autofocus="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-xs-6  col-sm-6  col-md-6 ">
+                                                        <button class="btn btn-primary btn-lg">
+                                                            注册
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-->
+                        </div><!-- /.row -->
+                    </div>
+                </div>
+            </div>
+        </div><!--/.panel-->
+    </div><!-- /.col-->
+</div><!-- /.row -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>物联网云平台</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/btst/css/styles.css" rel="stylesheet">
+    <link href="/static/css/slide.css" rel="stylesheet">
+
+    <script src="/static/btst/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/validation/jquery.validate.js"></script>
+    <script src="/static/validation/localization/messages_zh.js"></script>
+    <script src="/static/btst/js/bootstrap.min.js"></script>
+
+
+    <script src="/static/js/kjs.js"></script>
+
+    {{.HtmlHead}}
+
+    {{.HeadScripts}}
+</head>
+
+<body>
+
+{{.Modal}}
+
+{{.Nav}}
+
+{{.SiderBar}}
+
+{{.LayoutContent}}
+
+{{.BodyScripts}}
+
+<script src="/static/js/slide.js"></script>
+
+</body>
+
+</html>
