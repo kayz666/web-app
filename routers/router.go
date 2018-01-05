@@ -5,6 +5,7 @@ import (
 	"github.com/astaxie/beego"
 )
 
+
 func init() {
     beego.Router("/", &controllers.MainController{})
 	beego.Router("/index", &controllers.MainController{})
@@ -15,6 +16,7 @@ func init() {
 
 	beego.Router("/register", &controllers.RegisterCtl{})
 
+	beego.Router("/email/reg",&controllers.EmailCtl{})
 
 
 }

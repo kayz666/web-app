@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/kayz666/web-app/utils"
 )
 
 type MainController struct {
@@ -39,9 +40,8 @@ func (c *ConsoleCtl) Get(){
 }
 
 
-
-func (c *LoginCtl) Post(){
-
+func (c *LoginCtl) Get(){
+	c.TplName="iotconsole/login.html"
 }
 
 
@@ -56,5 +56,18 @@ func (c *RegisterCtl) Get(){
 
 }
 func (c *RegisterCtl) Post(){
-
+	email := c.GetString("email")
+	passwd :=c.GetString("password")
+	err := utils.HTTP_RegWithEmail(email,passwd)
+	if err != nil {
+		beego.Debug(err)
+		c.Abort("401")
+		return
+	}
+	c.Data["email"]=email
+	c.Layout="iotconsole/layout/html_layout.html"
+	c.TplName="iotconsole/reg_email_re.html"
+	c.LayoutSections= make(map[string]string)
+	c.LayoutSections["Modal"]="iotconsole/module/ic_loginmodal.html"
+	c.LayoutSections["Nav"]="iotconsole/module/ic_nav.html"
 }
